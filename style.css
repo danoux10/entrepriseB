@@ -1,0 +1,304 @@
+/* police */
+@font-face{
+	font-family: 'champagne';
+	src:url('police/C&L.ttf');
+}
+
+
+body{
+	margin:0;
+	/*background-color: lightpink;*/
+}
+
+*{
+	font-size: 12px;
+	font-family: sans-serif;
+	line-height: 18px;
+}
+
+
+
+/*header nav*/
+#navbar{
+	position: fixed;
+	justify-content: center;	
+	width: 100vw;
+	display: flex;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition: all ease .5s;
+	background-color: white;
+}
+
+#navbar nav{
+	width: 1200px;
+	margin:auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#navbar.shrink{
+	height: 50px;
+	transition: all ease .5s;
+	background: white; 
+}
+
+#logo_dbe{
+	width:50px;
+	height:50px;
+	margin: 1% 0 1% 3%;
+}
+
+#navbar nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#navbar li{
+	margin-left: 50px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+#navbar nav ul li a{
+	text-decoration: none;
+	color: #b8860d;
+	font-family: 'champagne';
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 0.25em 1em 0.25em 1em;
+}
+
+
+
+#navbar nav ul li a:hover{
+	border-radius: 15px;
+	border-bottom: darkgoldenrod 3px solid;
+	transition: 0.2s;
+}
+
+/* Accueil */
+
+#accueil{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background: url('image/raisin3.jpg') center no-repeat;
+	background-size: cover;
+	padding: 150px 0 150px 0; 
+}
+
+.bg_image{
+	width: 50%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.article{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.texte_accueil{
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo_accueil{
+	width: 60%;
+}
+
+.separation{
+	width: 100px;
+	padding: 0 0 2% 0;
+	line-height: 54px;
+}
+
+.separation200{
+	width: 200px;
+	padding: 0 0 2% 0;
+	line-height: 54px;
+}
+
+
+/* texte */
+
+.title{
+	font-family: 'champagne';
+	font-size: 54px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	text-align: center;
+	line-height: 81px;
+}
+
+.subtitle{
+	text-align: center;
+	font-size: 26px;
+	line-height: 39px;
+	text-transform: uppercase;
+	font-family: 'champagne';
+}
+
+.white{
+	color: white;
+}
+
+.black{
+	color: black;
+}
+
+.font16{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.gold{
+	color: darkgoldenrod;
+}
+
+p{
+	text-indent: 25px;
+}
+
+.bk-shadow{
+	text-shadow: 2px 2px 4px black;
+}
+
+.title-ra{
+
+}
+
+
+/* NOTRE HISTOIRE */
+
+#histoire, #ratafia, #magrabendi{
+	background-color: #151515;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0 100px 0;
+}
+
+#ratafia{
+	background-color: white;
+	flex-direction: column;
+}
+
+.grape-svg{
+	width: 40%;
+}
+
+
+
+#sect-rata{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/* magra*/
+
+.texte_magra{	
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-fam-rat, .img-fam-mag{
+	margin: 3%;
+	width: 45%;
+	border: 5px darkgoldenrod outset;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.img-fam-mag{
+	width: 40%;
+	margin: 15px 0 15px 0;
+}
+
+.magra-texte{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.magra-texte p{
+	margin: 3%;
+}
+
+.magra-art{
+	width: 80%;
+}
+
+.title-mb{
+	border-bottom: 3px goldenrod solid;
+	border-radius: 10px;
+}
+
+/*produit*/
+
+.prod{
+	display: flex;
+	width: 100vw;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.nav{
+    cursor: pointer;
+}
+
+.initial{
+	font-size: 26px;
+    padding-bottom: 5px;
+    color: darkgoldenrod;
+}
+
+.initial:hover{
+    border-radius: 10px;
+    border-bottom: 3px solid darkgoldenrod;
+    transition: all ease .5s;
+}
+
+.active{
+    font-size: 26px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid darkgoldenrod;
+    color: black;
+}
+
+#apero{
+	background-color:red; 
+}
+
+#alcool{
+    background-color: blue;
+}
+
+#autre{
+    background-color: yellow;
+}
+
+.closed{}.opened{}

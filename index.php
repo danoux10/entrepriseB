@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="zxx"> 
+<head>
+<title>Didier Barbe Entreprise</title>     
+<meta charset="utf-8"/>  
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>   
+<link rel="stylesheet" type="text/css" href="style.css"/>     
+<link rel="shortucut icon" href="image/icon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+<script src="js/jquery.localScroll.min.js"></script>     
+<script src="js/jquery.scrollTo.min.js"></script>     
+
+
+
+<script>
+	$(document).ready(function(){
+		$('#navbar nav').localScroll();
+	});
+</script>
+<!--script oppacity nav
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if(($(document).scrollTop()>10)&&($(window).width()>991)){
+				$('#navbar').addClass('shrink');
+			}
+			else{
+				$('#navbar').removeClass('shrink');
+			}
+		});
+	});
+</script>-->
+
+<script>
+	$(document).ready(function(){
+		$("#apero").hide();
+		$("#alcool").hide();
+		$("#autre").hide();
+
+		$('.apero').click(function(){
+			$('.apero').addClass('active'),
+			$('.alcool').removeClass('active'),
+			$('.autre').removeClass('active');
+
+			if($('#apero').hasClass('closed')){
+				$("#apero").addClass('opened').removeClass('closed').show().slideDown(),
+				$("#alcool").addClass('closed').removeClass('opened').hide().slideUp(),
+				$("#autre").addClass('closed').removeClass('opened').hide().slideUp();
+			}else{$("#apero").addClass('closed').removeClass('opened').hide().slideUp();
+			}
+		})		
+	})	
+</script>
+
+</head>
+<body>
+
+
+<!-- navbar -->
+
+<header id="navbar">
+	<nav>
+		<a href="#accueil"><img src="image/logo_dbe.svg" alt="DBE" id="logo_dbe"/></a>
+		<ul>
+			<li><a href="#histoire">Notre Histoire </a></li>
+			<li><a href="#ratafia">Le Ratafia </a></li>
+			<li><a href="#magrabendi">Le Magra Bendi </a></li>
+			<li><a href="#produits"> Nos Produits </a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- accueil -->
+
+<section id="accueil">
+	<div class="bg_image">
+		<img src="image/Logo.svg" alt="Logo" id="logo_accueil"/>
+	</div>
+	<div class="article">
+		<article class="texte_accueil">
+			<header><h2 class="title white bk-shadow">Une passion familiale</h2></header>
+			<img src="image/separation.svg" alt="séparateur" class="separation200"/>
+			<p class="white bk-shadow font16"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</p>
+		</article>	
+	</div>
+</section>
+
+<!-- histoire -->
+
+<section id="histoire">
+	<div class="article">
+		<article class="texte_accueil">
+			<header><h2 class="title white title-mb">Notre histoire</h2></header>
+			<header><h3 class="subtitle gold"> Une Histoire familiale</h3></header>
+			<img src="image/separation.svg" alt="séparateur" class="separation"/>
+			<p class="white"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			<header><h3 class="subtitle gold"> Une histoire de passions</h3></header>
+			<img src="image/separation.svg" alt="séparateur" class="separation"/>
+			<p class="white"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+		</article>	
+	</div>
+	<div class="bg_image">
+		<img src="image/grape.svg" class="grape-svg" />
+	</div>
+</section>
+
+<!-- ratafia -->
+<section id="ratafia">
+	<header><h2 class="title black title-mb title-ra">L'histoire du ratafia</h2></header>
+	<div id="sect-rata">
+		<img src="image/photos/hist-ratafia.jpg" alt="évolution du ratafia" class="img-fam-rat">
+	<div class="article">
+		<article class="texte_accueil">
+			<header><h3 class="subtitle gold"> Titre 1</h3></header>
+			<img src="image/separation.svg" alt="séparateur" class="separation"/>
+			<p class="black"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			<header><h3 class="subtitle gold"> Titre 2</h3></header>
+			<img src="image/separation.svg" alt="séparateur" class="separation"/>
+			<p class="black"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+		</article>	
+	</div>
+	</div>
+</section>
+
+<!-- Magra Bendi-->
+<section id="magrabendi">
+	<div class="article magra-art">
+		<header><h2 class="title white title-mb">La création du magra bendi</h2></header>
+		<article class="texte_magra">
+			<img src="image/photos/hist-mag-rg.jpg"  class="img-fam-mag" alt="famille du magrabendi framboise" />
+			<div class="magra-texte">
+				<header><h3 class="subtitle gold"> Le Magra Bendi Rouge</h3></header>
+				<img src="image/separation.svg" alt="séparateur" class="separation"/>
+				<p class="white"> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</article>
+		<article class="texte_magra">
+			<div class="magra-texte">
+				<header><h3 class="subtitle gold"> Le Magra Bendi blanc</h3></header>
+				<img src="image/separation.svg" alt="séparateur" class="separation"/>
+				<p class="white"> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+			<img src="image/photos/hist-mag-bl.jpg"  class="img-fam-mag" alt="famille magrabendi peche" />
+		</article>	
+	</div>
+</section>
+
+<section id="produits" class="prod">
+	<div class="nav apero"><h3 class="initial le1">Apéritif</h3></div>
+	<div class="nav alcool"><h3 class="active le2">Alcool Fort</h3></div>
+	<div class="nav autre"><h3 class="initial  le3">Autre</h3></div>
+</section>
+
+<section id="apero" class="closed">
+    <div>
+        <br>
+    </div>
+</section>
+    
+<section id="alcool" class="opened">
+    <div>
+        <br>
+    </div>
+</section>
+    
+<section id="autre" class="closed">
+    <div>
+        <br>
+    </div>
+</section>
+    
+</body>
+</html>
